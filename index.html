@@ -1,0 +1,56 @@
+<!DOCTYPE html><!--declaration defines that this document is an HTML5 document-->
+
+<html lang="es-mx"><!--element is the root element of an HTML page-->
+
+<head><!--element contains meta information about the HTML page-->
+    <link rel="stylesheet" href="style.css" />
+    <title>Guazo's Place</title><!--element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)-->
+</head>
+<body><!--element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables,etc-->
+<main><!--Describe principal place-->
+    <section><!--Make a section-->
+    <h1><!--element defines a large heading-->
+Guazo's place
+    </h1>
+    <p><!-- element defines a paragraph-->
+        Welcome to my own place, i like to share my <em>experiences</em> and what i'm like to do by myself.<br><br><!--em enphasis-->
+        <!--alt attribute for the <img> tag specifies an alternate text for an image-->
+        <img src="gzimg.png" alt="La imagen de un logo"><br><!--tag is used to embed an image in an HTML page. 
+            The src attribute specifies the path to the image to be displayed-->
+       
+        <a target="_blank" href="https:www.google.com">google</a><br><!--target attribute with the value _blank to the anchor (a)
+             element's opening tag, so that the link opens in new tab-->
+             <form>
+                <fieldset><!--Group input controls-->
+                <legend>Formulario</legend> <!--Put a name to a fieldset-->
+                    <input type="text" name="nombre" placeholder="nombre" required><br><!--To prevent a user from submitting your form 
+                        when required information is missing, you need to add the required attribute to an input element. -->
+                        <input type="text" name="apellido" placeholder="apellido" required><br><!--To prevent a user from submitting your form 
+                            when required information is missing, you need to add the required attribute to an input element. -->
+                            <input type="email" name="correo" placeholder="nombre@correo-com" required><br>
+                                <input type="date" name="fecha_nacimiento"><br>
+                                <input type="file" name="pic_foto"><br>
+                                <input type="range" name="rango" id="rango"><br>
+                                <input type="color" name="color" id="color"><br><br>
+                                <fieldset>
+                                    <legend>Sexo</legend>
+                                    <label for="m">mujer</label>
+                                    <input type="radio" name="sex" id="m">
+                                    <label for="h">hombre</label>
+                                    <input type="radio" name="sex" id="h">
+                                    <label for="e">esteban</label>
+                                    <input type="radio" name="sex" id="e"><br>
+                                </fieldset><br>
+                                <label for="comentario">Comentarios:</label><br>
+                                <textarea id="comentario" name="comentario" rows="10" cols="20">Sus comentarios...</textarea><br>
+
+                            <input name="submit" type="submit" id="submit">
+              </fieldset>
+             </form>
+        
+    </p>
+</section>
+</main>
+</body>
+
+</html>
